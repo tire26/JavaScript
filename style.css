@@ -1,7 +1,93 @@
-h1{
-    color: rgb(238, 11, 11);
-    font-size: 50px;
+*
+{
+  background-color111:grey;
+  color111:white;
+  border-width1:2px;
+  border-color1:green;
+  border-style1:solid;
+  border111:2px solid green;
 }
-div{
-    color: aqua;
+
+#cnvs
+{
+  border111:1px solid black;
 }
+
+span
+{
+  font-size:28px; 
+  width:60px;
+  display:inline-block;
+}
+
+#p2
+{
+  display111:inline-block;
+  width:300px;  
+}
+
+.d1
+{
+  border-color:red; 
+}
+
+.d2
+{
+  border-style:dotted;
+}
+
+.d3
+{
+  border-style:dashed;
+}
+
+#d2
+{
+  border-width:5px;
+}
+
+[target]
+{
+  border-color:orange; 
+}
+
+[qqq]
+{
+  border-radius:15px; 
+}
+
+[qqq="333"]
+{
+  background-color:black;
+}
+
+a[href^="http"]
+{
+  color:yellow;
+}
+
+div div li
+{
+  font-size:8px; 
+}
+
+div > ol > li
+{
+  color:blue;
+}
+
+p#p2 + p 
+{
+  color:maroon;
+}
+
+
+
+
+
+
+
+
+
+
+

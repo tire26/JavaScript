@@ -22,45 +22,6 @@ var o2 = {};
     //  Возврат Резульат
 }
 
-function calculateFactorial(num) {
-    var result;
-    if(typeof(calculateFactorial.count) != "number") {
-        calculateFactorial.count = 0;
-    }
-    calculateFactorial.count++;
-
-    // console.log(this);
-    if (num == undefined) {
-        if (typeof (this.value) == "number") {
-            num = this.value;
-        }
-    }
-    if (typeof (num) != "number") {
-        result = undefined;
-    } else if (num < 0) {
-        result = undefined;
-    } else if (num > Number.MAX_SAFE_INTEGER) {
-        result = undefined;
-    } else if (Math.floor(num) != num) {
-        result = undefined
-    }
-    result = 1;
-    if (num == 0) {
-        result = 1;
-    }
-    for (let i = 1; i <= num; i++) {
-        result *= i;
-    }
-    calculateFactorial.value = num;
-    calculateFactorial.result = result;
-    if (this.constructor == calculateFactorial) {
-        this.value = num;
-        this.calculateFactorial = result;
-    } else {
-        return result;
-    }
-
-}
 
 // console.log(calculateFactorial(10)); // console.log - для отладки
 
@@ -88,12 +49,112 @@ function calculateFactorial(num) {
 // console.log(n.constructor == Number);
 // console.log("1" == 1); // true с приведением
 // console.log("1" === 1); // false без
-console.log(calculateFactorial(10));
-console.log(calculateFactorial(10));
-calculateFactorial.count = "qqq";
-console.log(calculateFactorial(10));
-console.log(calculateFactorial(10));
-var o = { f: calculateFactorial, value: 7 }
-console.log(o.f(10));
-var num = new calculateFactorial(10);
-console.log(calculateFactorial.count);
+// console.log(calculateFactorial(10));
+// console.log(calculateFactorial(10));
+// calculateFactorial.count = "qqq";
+// console.log(calculateFactorial(10));
+// console.log(calculateFactorial(10));
+// var o = { f: calculateFactorial, value: 7 }
+// console.log(o.f(10));
+// var num = new calculateFactorial(10);
+// console.log(calculateFactorial.count);
+
+
+// console.time();
+// console.log(calculateFactorial(100));
+// console.timeEnd();
+
+// console.time();
+// console.log(calculateFactorial(100));
+// console.timeEnd();
+
+// console.time();
+// console.log(calculateFactorial(100));
+// console.timeEnd();
+
+// console.time();
+// console.log(calculateFactorial(100));
+// console.timeEnd();
+
+// console.time();
+// console.log(calculateFactorial(100));
+// console.timeEnd();
+// calculateFactorial(10, console.log);
+// calculateFactorial(10, alert); // alert - выводит как сообщение на странице
+// function msg(str) {
+//     console.log(document.getElementsByTagName("body").item(0));
+//     console.log(document.getElementsByTagName("body"));
+//     // document.getElementsByTagName("body")[0].innerHTML = str; // получили массив эл-ов с тегом боди
+
+// }
+// calculateFactorial(10, msg);
+// var a = document.getElementsByTagName("h1");
+// console.log(a);
+// console.log(a[1]);
+
+// function f(_delta = 1) {
+//     var _count = 0;
+
+//     return function(delta = _delta) {
+//         _count += delta;
+//         return _count;
+//     }
+// }
+
+// var medium = f();
+
+// console.log(medium());
+// console.log(medium());
+// console.log(medium());
+// console.log(medium());
+// console.log(medium(100));
+
+// var medium100 = f(100);
+// console.log(medium100());
+// console.log(medium100());
+// console.log(medium100());
+
+// (function(x, y) {console.log(x + y);})(1, 2);
+
+// var medium20 = 
+// function() {
+//     var _count = 0;
+
+//     return function(delta = 20) {
+//         _count += delta;
+//         return _count;
+//     }
+// }();
+// console.log(medium20());
+// console.log(medium20());
+// console.log(medium20());
+// var add =
+//     function () {
+//         var count = 0;
+//         var f = 
+//         function (x, y) {
+//             count++;
+//             return x + y;
+//         }
+//         f.count = function() {return count;}
+//         return f;
+//     }();
+// console.log(add(1, 2));
+// console.log(add(3, 4));
+// console.log(add(2, 4));
+// console.log(add.count());
+
+
+// var qqq = factorialWithCount;
+// console.log(factorialWithCount(1));
+// console.log(factorialWithCount(2));
+// console.log(factorialWithCount(3));
+// console.log(factorialWithCount(4));
+// console.log(qqq(5));
+// console.log(qqq(6));
+// console.log(qqq(7));
+// console.log(qqq(8));
+// console.log(factorialWithCount.count());
+
+// var calculateFactorial = function(x){return x;}
+calculateFactorial(10, cl)
